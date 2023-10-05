@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Certificado</title>
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="shortcut icon" href="assets/images/icon.png" type="image/x-icon">
+</head>
+<body>
+  <main class="container-fluid">
+    <div class="form-container">
+      <h3 class="title">Cadastro de Certificado</h3>
+      <div class="forms">
+        <form action="GET">
+          <div class="forms-item">
+            <label for="nome"><p>Título do Curso</p></label>
+            <input type="text" name="nome" id="nome">
+          </div>
+          
+          <div class="forms-item">
+            <label for="duracao"><p>Carga horária</p></label>
+            <input class="duracao" type="number" name="duracao" id="duracao"> Minutos
+          </div>
+          
+          <div class="forms-item">
+            <label for="tipo-proficiencia"><p>Proficiencia</p></label>
+            <select class="select-menu" name="tipo-proficiencia" id="tipo-proficiencia">
+              <option value="" disabled>Tipo da Proficiencia</option>
+              <option value="cloud">Cloud</option>
+              <option value="cybersecurity">Cyber-Security</option>
+              <option value="onpremises">On-Premises</option>
+            </select>
+          </div>
+  
+          <div class="forms-item">
+            <label for="descricao"><p>Descrição do Curso</p></label>
+            <textarea name="descricao" id="descricao" cols="35" rows="9"></textarea>
+          </div>
+  
+          <div class="forms-item">
+            <label for="tipo-curso">Classificação do Curso</label>
+            <select class="select-menu" name="tipo-curso" id="tipo-curso">
+              <option value="" disabled>Tipo de Curso</option>
+              <option value="tecnico">Técnico</option>
+              <option value="academico">Academico</option>
+              <option value="certificado">Certificado</option>
+              <option value="certificacao">Certificação</option>
+              <option value="bootcamp">Treinamento (Bootcamp)</option>
+            </select>
+          </div>
+          
+          <div class="forms-item">
+            <input class="btn-enviar" type="submit" value="Enviar Certificado">
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
